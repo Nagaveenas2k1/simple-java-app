@@ -13,16 +13,17 @@ simple-java-app/
 ├── pom.xml
 ├── README.md
 └── src/
-├── main/
-│ └── java/
-│ └── com/
-│ └── example/
-│ └── App.java
-└── test/
-└── java/
-└── com/
-└── example/
-└── AppTest.java
+    ├── main/
+    │   └── java/
+    │       └── com/
+    │           └── example/
+    │               └── App.java
+    └── test/
+        └── java/
+            └── com/
+                └── example/
+                    └── AppTest.java
+
 
 ---
 
@@ -44,19 +45,22 @@ simple-java-app/
     - Click **Build Now** in Jenkins.
     - Check Console Output for build and test status.
 
-**Sample Jenkins Console Output:**
-![Jenkins Console Output](images/jenkins-success-console.png)
-
-**Sample JAR File Location in Jenkins:**
-![JAR File in Target Folder](images/jar-in-target-folder.png)
-
 ---
 
 ## Screenshots
 
+### Jenkins build success output
+
 - Jenkins job configuration and build success:
   - ![Jenkins Build Success](images/jenkins-success-console.png)
+    
+---
+
   - ![Jenkins Success Build Output](images/jenkins-success-console-1.png)
+
+---
+
+### JAR file in Target
 
 - JAR file present in `target/` folder:
   - ![JAR File in Target](images/jar-in-target-folder.png)
