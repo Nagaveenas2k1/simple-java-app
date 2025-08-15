@@ -45,35 +45,40 @@ This will produce a file like `target/simple-java-app-1.0-SNAPSHOT.jar`
 
 2. **Open Jenkins Web Interface**
 
-    - In your web browser, go to:
-      ```
-      http://localhost:8080
-      ```
-      or use your server's IP address:
-      ```
-      http://<your-server-ip>:8080
-      ```
-    - Log in with your Jenkins username and password.
+  - In your web browser, go to:
+    ```
+    http://localhost:8080
+    ```
+    or use your server's IP address:
+    ```
+    http://<your-server-ip>:8080
+    ```
+  - Log in with your Jenkins username and password.
 
 ---
 
 ## How to Build in Jenkins
 
 1. **Create a New Freestyle Job:**
+
 - Go to Jenkins dashboard and click "New Item".
 - Enter a job name (e.g., `simple-java-app-build`), select "Freestyle project", click OK.
 
 2. **Configure Source Code Management:**
+
 - Select "Git" and enter your repo URL (`https://github.com/your-username/simple-java-app.git`).
 
 3. **Add the Build Step:**
+
 - Scroll to "Build section", click "Add build step" and select "Invoke top-level Maven targets".
 - In "Goals", enter:
+  
   ```
   clean install
   ```
 
 4. **Save and Build:**
+
 - Click "Save" at the bottom.
 - On your job page, click "Build Now".
 - After build completes, check "Console Output" for details.
@@ -95,18 +100,18 @@ This will produce a file like `target/simple-java-app-1.0-SNAPSHOT.jar`
 ### Jenkins build success output
 
 - Jenkins job configuration and build success:
-  - ![Jenkins Build Success](images/jenkins-success-console.png)
+- ![Jenkins Build Success](images/jenkins-success-console.png)
     
 ---
 
-  - ![Jenkins Success Build Output](images/jenkins-success-console-1.png)
+- ![Jenkins Success Build Output](images/jenkins-success-console-1.png)
 
 ---
 
 ### JAR file in Target
 
 - JAR file present in `target/` folder:
-  - ![JAR File in Target](images/jar-in-target-folder.png)
+- ![JAR File in Target](images/jar-in-target-folder.png)
 
 ---
 
